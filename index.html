@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>jQuery Functions</title>
+  <script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+  <script src ="script.js"></script>
+</head>
+<body>
+  <section>
+    <header>
+      <h2>Welcome to the jQuery Functions page!</h2>
+    </header>
+
+    <main>
+      <nav>
+        <h4>Let's manipulate some text!</h4>
+
+        <ul>
+          <li id='hide'><button>Hide The Text (Box1)</button></li>
+          <li id="show"><button>Show The Text (Box 2)</button></li>
+          <li id="toggle"><button>Toggle The Text (Box 3)</button></li>
+          <li id="slideUp"><button>Slide it Up (Box 4)</button></li>
+          <li id="slideDown"><button>Slide it Down (Box 4)</button></li>
+          <li id="slideTog"><button>Slide Toggle (Box 5)</button></li>
+          <li id="fadeOut"><button>Fade Out (Box 6)</button></li>
+          <li id="fadeIn"><button>Fade In (Box 6)</button></li>
+        </ul>
+      </nav>
+
+      <div id="topmain">
+
+        <div>
+          <p>Box 1: Here we can see the hide function making something disappear:</p>
+          <span id="hidden"> One Click and I'm gone!</span>
+        </div>
+        <div>
+          <p>Box 2: Here we are using the show function making text appear from thin air: </p>
+          <span hidden id="shown">Poof I appear</span>
+        </div>
+        <div>
+          <p>Box 3: The toggle function can be used to turn things on and off: </p>
+          <span id="tog">Its like a light switch</span>
+        </div>
+        <div>
+          <p>Box 4: Hit "Slide It Up" and watch it leave, then hit "Slide It Down" for it to reappear:</p>
+          <span id='slide'>Slide Away</span>
+        </div>
+        <div>
+          <p>Box 5: The Slide Toggle function is like up and down except one click does it all:</p>
+          <span id="slidetoggle"> Slide Toggle Me</span>
+        </div>
+        <div>
+          <p>Box 6: Use Fade In and Fade out to see the text fade away:</p>
+          <span id ="fade"><br><br>Make Me Fade</span>
+        </div>
+      </div>
+
+    <p id ="break"> </p>
+
+    <div id="bottommain">
+
+      <fieldset class="classchange">
+        <legend>Add Some Class</legend>
+          <p>The add class function can change the characteristics of anything</p>
+            <button id ="addclass">Click here to see</button>
+      </fieldset>
+
+      <fieldset>
+        <legend> Check it out</legend>
+        <p id = 'para'>My name is Bryan. Jquery has lots of functionality. </p>
+      </fieldset>
+      <img src=mario.png alt="It's a meow, Mario">
+      <div id="pictext"></div>
+      <script>
+        $('#pictext').text($('img').attr('alt'));
+      </script>
+    </div>
+
+    </main>
+
+  </section>
+</body>
+</html>
